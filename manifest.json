@@ -3,23 +3,30 @@
     "name": "Unscripted RP Alerts",
     "description": "Get real-time alerts for your position in the Unscripted RP queue.",
     "version": "1.0",
-    "permissions": ["storage", "notifications", "https://unscripted.gg//*"],
+    "permissions": [
+        "storage",
+        "notifications", 
+        "https://unscripted.gg//*"
+    ],
     "action": {
       "default_popup": "popup.html",
       "default_icon": "images/communityIcon_jhxta52k90xe1.png"
-}
-}
+},
     "background": {
       "service_worker": "background.js"
     },
     "content_scripts": [
       {
         "matches": ["https://unscripted.gg//*"],
-        "js": ["content.js"]
+        "js": [
+            "content.js"
+        ]
       }
     ],
-    "icons": {
-      "16": "images/communityIcon_jhxta52k90xe1.png"
+   "icons": {
+  "16": "images/communityIcon_jhxta52k90xe1.png",
+  "48": "images/communityIcon_jhxta52k90xe1.png",
+  "128": "images/communityIcon_jhxta52k90xe1.png"
+}
     }
   }
-  
