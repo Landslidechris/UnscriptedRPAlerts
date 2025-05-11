@@ -42,7 +42,7 @@ function sendNotification(position) {
     let notificationId = 'position_' + position;
     chrome.notifications.create(notificationId, {
         type: 'basic',
-        iconUrl: 'images/icon48.png',
+        iconUrl: 'images/wordmark.png',
         title: 'Queue Alert',
         message: `Your position is now ${position} or better!`
     });
@@ -52,9 +52,9 @@ function sendConnectNotification() {
     let notificationId = 'connect_notification';
     chrome.notifications.create(notificationId, {
         type: 'basic',
-        iconUrl: 'images/icon48.png',
+        iconUrl: 'images/wordmark.png',
         title: 'Connect Now!',
-        message: 'You can connect to ONX RP! You have 15 minutes or your position will reset!'
+        message: 'You can connect to Unscripted RP! You have 15 minutes or your position will reset!'
     });
 }
 
@@ -63,7 +63,7 @@ function sendQueueInfoToPopup(callback) {
 }
 
 chrome.notifications.onClicked.addListener(function(notificationId) {
-    chrome.tabs.create({ url: "https://onx.gg" });
+    chrome.tabs.create({ url: "https://unscripted.gg" });
 });
 
 chrome.storage.local.get({ positions: [] }, function(data) {
