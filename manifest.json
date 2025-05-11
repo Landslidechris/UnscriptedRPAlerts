@@ -1,9 +1,9 @@
 {
     "manifest_version": 3,
-    "name": "ONX RP Alerts",
-    "description": "Get real-time alerts for your position in the ONX RP queue.",
+    "name": "Unscripted RP Alerts",
+    "description": "Get real-time alerts for your position in the Unscripted RP queue.",
     "version": "1.0",
-    "permissions": ["storage", "notifications", "https://onx.gg/*"],
+    "permissions": ["storage", "notifications", "https://unscripted.gg//*"],
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
@@ -17,7 +17,7 @@
     },
     "content_scripts": [
       {
-        "matches": ["https://onx.gg/*"],
+        "matches": ["https://unscripted.gg//*"],
         "js": ["content.js"]
       }
     ],
